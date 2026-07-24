@@ -1,0 +1,21 @@
+# Logs
+logs/
+
+# Informes generados
+reports/
+
+# Archivos temporales
+*.tmp
+*.temp
+*.log
+
+# Configuración personal
+config/local.json
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Editores
+.vscode/
+.idea/
