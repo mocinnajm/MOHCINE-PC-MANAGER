@@ -69,3 +69,20 @@ Diseñar la arquitectura inicial del motor de diagnóstico.
 - Proyecto compilado correctamente con `javac`.
 - Aplicación ejecutada correctamente desde la terminal.
 - Información comprobada comparando los resultados con PowerShell.
+## 26/07/2026
+
+### Sprint 3 - Refactorización de memoria JVM
+
+#### Mejoras realizadas
+
+- Creada clase `MemoryInfo` con responsabilidad exclusiva sobre la memoria JVM.
+- Eliminada lógica de memoria de `SystemInfo`.
+- Implementado cálculo de memoria usada mediante total - libre.
+- Añadida conversión reutilizable de bytes a MB.
+- Mejorada la separación de responsabilidades del sistema.
+
+#### Aprendizajes
+
+- Aplicación del principio de responsabilidad única (SRP).
+- Reducción del acoplamiento entre clases.
+- Uso de clases especializadas para facilitar mantenimiento futuro.
