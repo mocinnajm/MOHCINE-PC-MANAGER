@@ -10,6 +10,7 @@ public class SystemInfo {
     private String architecture;
     private String javaVersion;
     private MemoryInfo memoryInfo;
+    private DiskInfo diskInfo;
 
     public SystemInfo() {
         this.computerName = System.getenv("COMPUTERNAME");
@@ -18,6 +19,7 @@ public class SystemInfo {
         this.architecture = System.getProperty("os.arch");
         this.javaVersion = System.getProperty("java.version");
         this.memoryInfo = new MemoryInfo();
+        this.diskInfo = new DiskInfo();
     }
 
     public void showInfo() {
@@ -45,16 +47,17 @@ public class SystemInfo {
         System.out.println("Memoria Usada : "
         + memoryInfo.getUsedMemoryMB() + " MB");
 
+        diskInfo.getTotalSpaceGB();
+        diskInfo.getFreeSpaceGB();
+
         System.out.println();
         System.out.println("----- DISCO -----");
-        File disk = new File("C:\\");
-
-        long totalDisk = disk.getTotalSpace() / (1024 * 1024 * 1024);
-        long freeDisk = disk.getFreeSpace() / (1024 * 1024 * 1024);
-
         System.out.println("Unidad        : C:\\");
-        System.out.println("Espacio Total : " + totalDisk + " GB");
-        System.out.println("Espacio Libre : " + freeDisk + " GB");
 
+        System.out.println("Espacio Total : "
+        + diskInfo.getTotalSpaceGB() + " GB");
+
+        System.out.println("Espacio Libre : "
+        + diskInfo.getFreeSpaceGB() + " GB");
     }
 }
