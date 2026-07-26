@@ -1,4 +1,6 @@
 package com.mohcine.pcmanager.core.system;
+import java.io.File;
+
 
 public class SystemInfo {
 
@@ -39,5 +41,17 @@ public class SystemInfo {
         System.out.println("Memoria Total : " + totalMemory + " MB");
         System.out.println("Memoria Libre : " + freeMemory + " MB");
         System.out.println("Memoria Usada : " + usedMemory + " MB");
+
+        System.out.println();
+        System.out.println("----- DISCO -----");
+        File disk = new File("C:\\");
+        
+        long totalDisk = disk.getTotalSpace() / (1024 * 1024 * 1024);
+        long freeDisk = disk.getFreeSpace() / (1024 * 1024 * 1024);
+
+        System.out.println("Unidad        : C:\\");
+        System.out.println("Espacio Total : " + totalDisk + " GB");
+        System.out.println("Espacio Libre : " + freeDisk + " GB");
+
     }
 }
