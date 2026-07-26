@@ -28,5 +28,16 @@ public class SystemInfo {
         System.out.println("Sistema: " + operatingSystem);
         System.out.println("Arquitectura: " + architecture);
         System.out.println("Java: " + javaVersion);
+        Runtime runtime = Runtime.getRuntime();
+
+        long totalMemory = runtime.totalMemory() / (1024 * 1024);
+        long freeMemory = runtime.freeMemory() / (1024 * 1024);
+        long usedMemory = totalMemory - freeMemory;
+
+        System.out.println();
+        System.out.println("----- MEMORIA JVM -----");
+        System.out.println("Memoria Total : " + totalMemory + " MB");
+        System.out.println("Memoria Libre : " + freeMemory + " MB");
+        System.out.println("Memoria Usada : " + usedMemory + " MB");
     }
 }
