@@ -38,3 +38,10 @@ Aprendido:
 ### Próximo objetivo
 
 Diseñar la arquitectura inicial del motor de diagnóstico.
+## 26/07/2026 - Primera ejecución Java
+
+- Creada estructura profesional de paquetes Java.
+- Añadida clase App como punto de entrada.
+- Creada clase SystemInfo para obtener información del sistema.
+- Configurado .gitignore para archivos compilados.
+- Primera compilación y ejecución correcta con Java 21.
