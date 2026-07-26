@@ -86,3 +86,28 @@ Diseñar la arquitectura inicial del motor de diagnóstico.
 - Aplicación del principio de responsabilidad única (SRP).
 - Reducción del acoplamiento entre clases.
 - Uso de clases especializadas para facilitar mantenimiento futuro.
+## 26/07/2026
+
+### Sprint 4 - Refactorización de información del disco
+
+#### Mejoras realizadas
+
+- Creada la clase `DiskInfo` con responsabilidad exclusiva sobre la información del almacenamiento.
+- Eliminada la lógica de disco de la clase `SystemInfo`.
+- Implementados métodos para obtener el espacio total y espacio libre del disco.
+- Integrada la clase `DiskInfo` dentro de `SystemInfo`.
+- Mejorada la separación de responsabilidades del sistema.
+
+#### Aprendizajes
+
+- Aplicación del principio de responsabilidad única (SRP).
+- Uso de clases especializadas para reducir la complejidad de las clases principales.
+- Separación entre clases coordinadoras y clases encargadas de obtener información específica.
+- Importancia de probar cada componente antes de integrarlo en la aplicación.
+
+#### Verificación
+
+- Clase `DiskInfo` probada de forma independiente mediante `TestDisk`.
+- Proyecto compilado correctamente con `javac`.
+- Aplicación ejecutada correctamente desde la clase principal `App`.
+- Información del disco comprobada comparando los resultados con PowerShell.
