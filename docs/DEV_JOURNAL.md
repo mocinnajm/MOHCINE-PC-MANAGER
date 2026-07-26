@@ -45,3 +45,27 @@ Diseñar la arquitectura inicial del motor de diagnóstico.
 - Creada clase SystemInfo para obtener información del sistema.
 - Configurado .gitignore para archivos compilados.
 - Primera compilación y ejecución correcta con Java 21.
+## 26/07/2026
+
+### Sprint 2 - Información del sistema
+
+#### Funcionalidades añadidas
+
+- Se implementó la clase `SystemInfo` para mostrar información del sistema.
+- Se añadió monitorización de la memoria de la JVM mediante la clase `Runtime`.
+- Se muestra la memoria total, libre y utilizada en MB.
+- Se añadió información del disco mediante la clase `File`.
+- Se muestra el espacio total y libre de la unidad principal en GB.
+
+#### Aprendizajes
+
+- Diferencia entre la memoria de la JVM y el almacenamiento del disco.
+- Uso de la clase `Runtime` para acceder a la memoria de la JVM.
+- Uso de la clase `File` para obtener información del sistema de archivos.
+- Conversión de bytes a MB y GB para mostrar información legible.
+
+#### Verificación
+
+- Proyecto compilado correctamente con `javac`.
+- Aplicación ejecutada correctamente desde la terminal.
+- Información comprobada comparando los resultados con PowerShell.
