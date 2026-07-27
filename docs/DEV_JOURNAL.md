@@ -111,3 +111,28 @@ Diseñar la arquitectura inicial del motor de diagnóstico.
 - Proyecto compilado correctamente con `javac`.
 - Aplicación ejecutada correctamente desde la clase principal `App`.
 - Información del disco comprobada comparando los resultados con PowerShell.
+## 27/07/2026
+
+### Sprint 5 - Arquitectura de análisis del sistema
+
+#### Mejoras realizadas
+
+- Creada la clase `SystemMetrics` para representar una fotografía del estado del sistema.
+- Creada la clase `HealthAnalyzer` para analizar el estado del equipo.
+- Separadas las responsabilidades entre obtención de datos, almacenamiento de datos y análisis.
+- Implementada la primera lógica de diagnóstico para memoria y disco.
+- Verificada la arquitectura mediante la clase temporal `TestHealth`.
+
+#### Aprendizajes
+
+- Diferencia entre obtener datos y analizarlos.
+- Introducción de una capa de modelo (`model`) para transportar información entre componentes.
+- Aplicación de una arquitectura por capas (`system`, `model`, `analysis`).
+- Importancia de diseñar pensando en la evolución futura del proyecto.
+
+#### Verificación
+
+- Compilación correcta con `javac`.
+- Prueba independiente de `HealthAnalyzer` mediante `TestHealth`.
+- Resultados esperados obtenidos durante la ejecución.
+
