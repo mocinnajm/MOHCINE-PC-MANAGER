@@ -135,4 +135,32 @@ Diseñar la arquitectura inicial del motor de diagnóstico.
 - Compilación correcta con `javac`.
 - Prueba independiente de `HealthAnalyzer` mediante `TestHealth`.
 - Resultados esperados obtenidos durante la ejecución.
+## 27/07/2026
+
+### Sprint 6 - Métricas del sistema y refactorización del análisis
+
+#### Mejoras realizadas
+
+- Creada clase `DiskInfo` con responsabilidad exclusiva sobre la información del disco.
+- Añadido cálculo del porcentaje libre del disco mediante `double`.
+- Evolucionada la clase `SystemMetrics` para trabajar con porcentajes en lugar de valores absolutos.
+- Actualizado `HealthAnalyzer` para analizar porcentajes de uso de memoria y disco.
+- Mejorada la arquitectura separando recopilación de datos y toma de decisiones.
+- Verificada la compilación completa del proyecto.
+
+#### Aprendizajes
+
+- Diferencia entre valores absolutos y porcentajes para realizar diagnósticos más fiables.
+- Importancia de separar:
+  - recopilación de información;
+  - almacenamiento de métricas;
+  - análisis de estado.
+- Aplicación del principio de responsabilidad única (SRP).
+- Uso de `double` para cálculos con valores decimales.
+
+#### Verificación
+
+- Compilación completa realizada correctamente.
+- Aplicación ejecutada correctamente.
+- Información de memoria y disco comprobada en Windows 11.
 
