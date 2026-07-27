@@ -35,5 +35,15 @@ public class MemoryInfo {
     public long getUsedMemoryMB() {
         return bytesToMB(getUsedMemory());
     }
+    public double getUsedMemoryPercentage() {
+
+        return (getUsedMemory() * 100.0) / getTotalMemory();
+
+}
+    public double getFreeMemoryPercentage() {
+
+        return (getFreeMemory() * 100.0) / getTotalMemory();
+
+}
 
 }

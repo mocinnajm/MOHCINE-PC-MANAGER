@@ -2,19 +2,44 @@ package com.mohcine.pcmanager.core.model;
 
 public class SystemMetrics {
 
-    private final long memoryUsedMB;
-    private final long diskFreeGB;
+    private final double memoryUsedPercentage;
+    private final double memoryFreePercentage;
 
-    public SystemMetrics(long memoryUsedMB, long diskFreeGB) {
-        this.memoryUsedMB = memoryUsedMB;
-        this.diskFreeGB = diskFreeGB;
+    private final double diskUsedPercentage;
+    private final double diskFreePercentage;
+
+
+    public SystemMetrics(
+            double memoryUsedPercentage,
+            double memoryFreePercentage,
+            double diskUsedPercentage,
+            double diskFreePercentage) {
+
+        this.memoryUsedPercentage = memoryUsedPercentage;
+        this.memoryFreePercentage = memoryFreePercentage;
+        this.diskUsedPercentage = diskUsedPercentage;
+        this.diskFreePercentage = diskFreePercentage;
+
     }
 
-    public long getMemoryUsedMB() {
-        return memoryUsedMB;
+
+    public double getMemoryUsedPercentage() {
+        return memoryUsedPercentage;
     }
 
-    public long getDiskFreeGB() {
-        return diskFreeGB;
+
+    public double getMemoryFreePercentage() {
+        return memoryFreePercentage;
     }
+
+
+    public double getDiskUsedPercentage() {
+        return diskUsedPercentage;
+    }
+
+
+    public double getDiskFreePercentage() {
+        return diskFreePercentage;
+    }
+
 }

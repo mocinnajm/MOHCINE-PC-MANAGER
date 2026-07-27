@@ -10,12 +10,25 @@ public class DiskInfo {
         disk = new File("C:\\");
     }
 
+
     public long getTotalSpaceGB() {
+
         return disk.getTotalSpace() / (1024 * 1024 * 1024);
+
     }
 
+
     public long getFreeSpaceGB() {
+
         return disk.getFreeSpace() / (1024 * 1024 * 1024);
+
+    }
+
+
+    public double getFreeDiskPercentage() {
+
+        return (disk.getFreeSpace() * 100.0) / disk.getTotalSpace();
+
     }
 
 }

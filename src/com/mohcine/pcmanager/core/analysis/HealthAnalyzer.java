@@ -6,13 +6,15 @@ public class HealthAnalyzer {
 
     private final SystemMetrics metrics;
 
+
     public HealthAnalyzer(SystemMetrics metrics) {
         this.metrics = metrics;
     }
 
+
     public String analyzeMemory() {
 
-        if (metrics.getMemoryUsedMB() < 500) {
+        if (metrics.getMemoryUsedPercentage() < 70) {
             return "Memoria: Excelente";
         }
 
@@ -20,12 +22,14 @@ public class HealthAnalyzer {
     }
 
 
+
     public String analyzeDisk() {
 
-        if (metrics.getDiskFreeGB() > 100) {
+        if (metrics.getDiskFreePercentage() > 30) {
             return "Disco: Excelente";
         }
 
         return "Disco: Poco espacio libre";
     }
+
 }
