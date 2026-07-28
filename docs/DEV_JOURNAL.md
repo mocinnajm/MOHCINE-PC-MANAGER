@@ -202,4 +202,31 @@ El sistema muestra información del ordenador y genera un diagnóstico automáti
 
 - Memoria: Excelente
 - Disco: Excelente
+## 28/07/2026
+
+### Sprint 8 - Mejora del sistema de estados de salud
+
+#### Mejoras realizadas
+
+- Creado el enum `HealthStatus` para representar estados del sistema.
+- Separada la lógica de decisión de la presentación de resultados.
+- `HealthAnalyzer` ahora devuelve estados en lugar de textos.
+- Añadida descripción humana a cada estado.
+- Eliminados números mágicos del análisis mediante constantes.
+- Mejorada la mantenibilidad del código.
+
+#### Aprendizajes
+
+- Uso de enumeraciones (`enum`) para representar estados controlados.
+- Separación entre lógica de negocio y presentación.
+- Uso de constantes para reglas del sistema.
+- Mejora de legibilidad y mantenimiento del código.
+
+#### Resultado
+
+El sistema analiza las métricas obtenidas y genera un diagnóstico:
+
+- Memoria: Excelente
+- Disco: Excelente
+
 

@@ -92,10 +92,12 @@ public class SystemInfo {
 
         System.out.println("----- DIAGNÓSTICO -----");
 
-        System.out.println(analyzer.analyzeMemory());
+        System.out.println("Memoria: "
+        + analyzer.analyzeMemory().getDescription());
 
-        System.out.println(analyzer.analyzeDisk());
 
+        System.out.println("Disco: "
+        + analyzer.analyzeDisk().getDescription());
     }
 
 }
