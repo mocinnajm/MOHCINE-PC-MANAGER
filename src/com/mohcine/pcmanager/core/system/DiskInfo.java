@@ -30,5 +30,8 @@ public class DiskInfo {
         return (disk.getFreeSpace() * 100.0) / disk.getTotalSpace();
 
     }
+    public double getUsedDiskPercentage() {
+        return 100.0 - getFreeDiskPercentage();
+}    
 
 }
