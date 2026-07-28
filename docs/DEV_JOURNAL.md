@@ -163,4 +163,43 @@ Diseñar la arquitectura inicial del motor de diagnóstico.
 - Compilación completa realizada correctamente.
 - Aplicación ejecutada correctamente.
 - Información de memoria y disco comprobada en Windows 11.
+## 28/07/2026
+
+### Sprint 7 - Integración del sistema de diagnóstico
+
+#### Mejoras realizadas
+
+- Integrada la clase `SystemInfo` con los módulos de información del sistema.
+- `MemoryInfo` gestiona la obtención de datos y porcentajes de memoria JVM.
+- `DiskInfo` gestiona información del almacenamiento y porcentajes de uso.
+- Creada la conexión entre `SystemMetrics` y `HealthAnalyzer`.
+- Implementado análisis automático del estado del equipo.
+- El sistema ahora puede determinar el estado de memoria y disco mediante reglas de salud.
+
+#### Arquitectura actual
+SystemInfo
+|
+|-- MemoryInfo
+|
+|-- DiskInfo
+|
+|-- SystemMetrics
+|
+v
+HealthAnalyzer
+
+#### Aprendizajes
+
+- Separación de responsabilidades entre obtención de datos y análisis.
+- Uso de clases especializadas para evitar duplicación de código.
+- Importancia de trabajar con porcentajes para comparar diferentes equipos.
+- Aplicación práctica del principio de responsabilidad única (SRP).
+- Flujo de información entre objetos en Java.
+
+#### Resultado
+
+El sistema muestra información del ordenador y genera un diagnóstico automático:
+
+- Memoria: Excelente
+- Disco: Excelente
 
