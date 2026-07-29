@@ -55,6 +55,11 @@ public class SystemInfo {
 
         System.out.println("Memoria Usada : "
                 + memoryInfo.getUsedMemoryMB() + " MB");
+         System.out.println("Uso Memoria   : "
+        + String.format("%.2f", memoryInfo.getUsedMemoryPercentage()) + " %");
+
+        System.out.println("Memoria Libre : "
+        + String.format("%.2f", memoryInfo.getFreeMemoryPercentage()) + " %");       
 
 
         System.out.println();
@@ -68,6 +73,11 @@ public class SystemInfo {
 
         System.out.println("Espacio Libre : "
                 + diskInfo.getFreeSpaceGB() + " GB");
+                System.out.println("Uso Disco     : "
+        + String.format("%.2f", diskInfo.getUsedDiskPercentage()) + " %");
+
+        System.out.println("Disco Libre   : "
+        + String.format("%.2f", diskInfo.getFreeDiskPercentage()) + " %");
 
 
         /*

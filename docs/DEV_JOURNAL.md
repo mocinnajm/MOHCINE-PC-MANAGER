@@ -228,5 +228,69 @@ El sistema analiza las métricas obtenidas y genera un diagnóstico:
 
 - Memoria: Excelente
 - Disco: Excelente
+## Sprint 9 - Mejora visualización de métricas del sistema
+
+### Objetivo
+
+Mejorar la información mostrada al usuario añadiendo porcentajes de uso y disponibilidad de memoria y disco.
+
+### Cambios realizados
+
+- Añadida visualización del porcentaje de memoria usada.
+- Añadida visualización del porcentaje de memoria libre.
+- Añadida visualización del porcentaje de disco usado.
+- Añadida visualización del porcentaje de disco libre.
+- Utilizado `String.format("%.2f")` para mostrar valores decimales con dos cifras.
+- Mejorada la legibilidad de la información mostrada por `SystemInfo`.
+
+### Arquitectura actual
+
+El flujo de información queda organizado de la siguiente manera:
+
+Sistema operativo
+↓
+MemoryInfo / DiskInfo
+↓
+SystemMetrics
+↓
+HealthAnalyzer
+↓
+HealthStatus
+↓
+SystemInfo
+↓
+Usuario
+
+### Aprendizajes
+
+- Diferencia entre obtener datos y presentar información.
+- Uso de métodos existentes para reutilizar cálculos.
+- Importancia de mostrar información preparada para el usuario.
+- Formateo de números decimales en Java mediante `String.format`.
+- Continuación de la separación de responsabilidades entre clases.
+
+### Resultado
+
+El sistema ahora muestra información más completa:
+
+- Porcentaje de memoria utilizada.
+- Porcentaje de memoria disponible.
+- Porcentaje de disco ocupado.
+- Porcentaje de espacio libre.
+
+Ejemplo de salida:
+
+Memoria:
+- Uso: 1,13 %
+- Libre: 98,69 %
+
+Disco:
+- Uso: 40,87 %
+- Libre: 59,13 %
+
+El diagnóstico continúa funcionando correctamente:
+
+- Memoria: Excelente.
+- Disco: Excelente.
 
 
