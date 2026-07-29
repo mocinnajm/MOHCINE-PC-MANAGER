@@ -292,5 +292,58 @@ El diagnóstico continúa funcionando correctamente:
 
 - Memoria: Excelente.
 - Disco: Excelente.
+## Sprint 10 - HealthReport y mejora del diagnóstico
+
+**Fecha:** 29/07/2026
+
+### Objetivo
+
+Mejorar el sistema de diagnóstico para que no solo devuelva un estado de salud, sino también información detallada sobre el resultado del análisis.
+
+### Trabajo realizado
+
+* Se creó la clase `HealthReport` en `core/model`.
+* `HealthReport` almacena:
+
+  * `HealthStatus`
+  * Mensaje descriptivo
+  * Valor analizado
+* Se modificó `HealthAnalyzer` para devolver un objeto `HealthReport` en lugar de únicamente `HealthStatus`.
+* Se actualizó `SystemInfo` para mostrar:
+
+  * Estado del diagnóstico
+  * Mensaje explicativo
+  * Valor analizado
+* Se verificó la compilación y la ejecución correcta del proyecto.
+
+### Resultado
+
+Salida actual del diagnóstico:
+
+```text
+----- DIAGNÓSTICO -----
+
+Memoria: EXCELLENT
+Mensaje: El consumo de memoria es correcto.
+Valor analizado: 1,31 %
+
+Disco: EXCELLENT
+Mensaje: Existe suficiente espacio libre en el disco.
+Valor analizado: 59,04 %
+```
+
+### Aprendizajes
+
+Durante este sprint se reforzó el principio de separación de responsabilidades:
+
+* `MemoryInfo` y `DiskInfo` obtienen datos del sistema.
+* `SystemMetrics` agrupa las métricas.
+* `HealthAnalyzer` analiza las métricas.
+* `HealthReport` representa el resultado del análisis.
+* `SystemInfo` presenta la información al usuario.
+
+Esta arquitectura facilita la ampliación del proyecto con nuevos componentes como CPU, batería, red o temperatura sin modificar la estructura existente.
+
+
 
 
