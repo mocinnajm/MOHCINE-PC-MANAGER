@@ -373,6 +373,27 @@ La aplicación muestra correctamente la información de la CPU junto con la memo
 ### Próximos pasos
 
 Ampliar `CPUInfo` para obtener información más detallada del procesador y preparar su integración con el sistema de análisis.
+## Sprint 11 - Refactorización de CPUInfo con toString()
+
+**Fecha:** 01/08/2026
+
+### Objetivo
+
+Mejorar el diseño de la clase `CPUInfo` para que sea responsable de representar su propia información.
+
+### Trabajo realizado
+
+* Se implementó el método `toString()` en la clase `CPUInfo`.
+* Se simplificó la clase `SystemInfo`, eliminando la impresión individual de cada atributo de la CPU.
+* Ahora `SystemInfo` únicamente imprime el objeto `CPUInfo`, delegando la representación de la información en la propia clase.
+
+### Resultado
+
+La salida de la aplicación permanece exactamente igual, pero el código es más limpio y fácil de mantener.
+
+### Aprendizajes
+
+Se aplicó una refactorización basada en el principio de responsabilidad única (Single Responsibility Principle). Cada clase es responsable de representar su propia información, reduciendo el acoplamiento entre componentes.
 
 
 

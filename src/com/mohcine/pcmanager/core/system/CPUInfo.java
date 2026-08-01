@@ -12,6 +12,14 @@ public class CPUInfo {
 
     }
 
+    @Override
+    public String toString() {
+
+        return "Arquitectura : " + architecture + System.lineSeparator()
+                + "Procesadores : " + availableProcessors;
+
+    }
+
     public String getArchitecture() {
 
         return architecture;

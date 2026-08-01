@@ -79,12 +79,7 @@ public class SystemInfo {
                 System.out.println();
                 System.out.println("----- CPU -----");
 
-                System.out.println("Arquitectura : "
-                                + cpuInfo.getArchitecture());
-
-                System.out.println("Procesadores : "
-                                + cpuInfo.getAvailableProcessors());
-
+                System.out.println(cpuInfo);
                 /*
                  * Preparar métricas para el análisis
                  */
