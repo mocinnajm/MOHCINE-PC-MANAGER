@@ -1,0 +1,36 @@
+==============================
+ MOHCINE PC MANAGER
+ SYSTEM INFORMATION
+==============================
+Equipo: DESKTOP-NH7CN2S
+Usuario: admin
+Sistema: Windows 11
+Arquitectura: amd64
+Java: 21.0.8
+
+----- MEMORIA JVM -----
+Memoria Total : 254 MB
+Memoria Libre : 251 MB
+Memoria Usada : 2 MB
+Uso Memoria   : 1,13 %
+Memoria Libre : 98,69 %
+
+----- DISCO -----
+Unidad        : C:\
+Espacio Total : 475 GB
+Espacio Libre : 278 GB
+Uso Disco     : 41,44 %
+Disco Libre   : 58,56 %
+
+----- CPU -----
+Arquitectura : amd64
+Procesadores : 8
+
+----- DIAGNÓSTICO -----
+Memoria: EXCELLENT
+Mensaje: El consumo de memoria es correcto.
+Valor analizado: 1,48 %
+
+Disco: EXCELLENT
+Mensaje: Existe suficiente espacio libre en el disco.
+Valor analizado: 58,56 %

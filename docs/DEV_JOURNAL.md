@@ -394,6 +394,26 @@ La salida de la aplicación permanece exactamente igual, pero el código es más
 ### Aprendizajes
 
 Se aplicó una refactorización basada en el principio de responsabilidad única (Single Responsibility Principle). Cada clase es responsable de representar su propia información, reduciendo el acoplamiento entre componentes.
+## Sprint 12
+
+### Objetivo
+Implementar la exportación del informe del sistema a un archivo de texto.
+
+### Trabajo realizado
+- Creada la clase ReportExporter.
+- Implementado el método export().
+- Uso de FileWriter para generar system_report.txt.
+- Integrado SystemSummary con ReportExporter.
+- Exportadas las secciones:
+  - Información del sistema
+  - Memoria
+  - Disco
+  - CPU
+  - Diagnóstico
+
+### Resultado
+El programa genera automáticamente un informe completo del estado del equipo.
+
 
 
 
