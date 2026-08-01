@@ -14,6 +14,7 @@ public class SystemInfo {
 
         private MemoryInfo memoryInfo;
         private DiskInfo diskInfo;
+        private CPUInfo cpuInfo;
 
         public SystemInfo() {
 
@@ -25,6 +26,7 @@ public class SystemInfo {
 
                 this.memoryInfo = new MemoryInfo();
                 this.diskInfo = new DiskInfo();
+                this.cpuInfo = new CPUInfo();
         }
 
         public void showInfo() {
@@ -74,6 +76,14 @@ public class SystemInfo {
 
                 System.out.println("Disco Libre   : "
                                 + String.format("%.2f", diskInfo.getFreeDiskPercentage()) + " %");
+                System.out.println();
+                System.out.println("----- CPU -----");
+
+                System.out.println("Arquitectura : "
+                                + cpuInfo.getArchitecture());
+
+                System.out.println("Procesadores : "
+                                + cpuInfo.getAvailableProcessors());
 
                 /*
                  * Preparar métricas para el análisis

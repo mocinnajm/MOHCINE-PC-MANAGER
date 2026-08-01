@@ -343,6 +343,36 @@ Durante este sprint se reforzó el principio de separación de responsabilidades
 * `SystemInfo` presenta la información al usuario.
 
 Esta arquitectura facilita la ampliación del proyecto con nuevos componentes como CPU, batería, red o temperatura sin modificar la estructura existente.
+## Sprint 11 - Integración inicial de CPUInfo
+
+**Fecha:** 30/07/2026
+
+### Objetivo
+
+Comenzar la integración del componente encargado de obtener información de la CPU.
+
+### Trabajo realizado
+
+* Se creó la clase `CPUInfo`.
+* Se añadieron los atributos:
+
+  * `architecture`
+  * `availableProcessors`
+* Se implementaron los getters correspondientes.
+* Se integró `CPUInfo` dentro de `SystemInfo`.
+* Se añadió una nueva sección "CPU" en la salida de la aplicación mostrando:
+
+  * Arquitectura del sistema.
+  * Número de procesadores disponibles para la JVM.
+* Se verificó la compilación y la ejecución sin errores.
+
+### Resultado
+
+La aplicación muestra correctamente la información de la CPU junto con la memoria, el disco y el diagnóstico del sistema.
+
+### Próximos pasos
+
+Ampliar `CPUInfo` para obtener información más detallada del procesador y preparar su integración con el sistema de análisis.
 
 
 
