@@ -15,6 +15,7 @@ public class SystemInfo {
         private MemoryInfo memoryInfo;
         private DiskInfo diskInfo;
         private CPUInfo cpuInfo;
+        private DateTimeInfo dateTimeInfo;
 
         public SystemInfo() {
 
@@ -27,6 +28,7 @@ public class SystemInfo {
                 this.memoryInfo = new MemoryInfo();
                 this.diskInfo = new DiskInfo();
                 this.cpuInfo = new CPUInfo();
+                this.dateTimeInfo = new DateTimeInfo();
         }
 
         public void showInfo() {
@@ -35,6 +37,10 @@ public class SystemInfo {
                 summary.addLine(" MOHCINE PC MANAGER");
                 summary.addLine(" SYSTEM INFORMATION");
                 summary.addLine("==============================");
+                summary.addLine("Fecha y hora: "
+                                + dateTimeInfo.getCurrentDateTime());
+
+                summary.addLine("");
 
                 summary.addLine("Equipo: " + computerName);
                 summary.addLine("Usuario: " + userName);
