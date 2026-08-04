@@ -413,6 +413,30 @@ Implementar la exportación del informe del sistema a un archivo de texto.
 
 ### Resultado
 El programa genera automáticamente un informe completo del estado del equipo.
+## Sprint 13 - Fecha y hora separadas
+
+### Objetivo
+Separar la fecha y la hora en el informe del sistema para mejorar la legibilidad.
+
+### Trabajo realizado
+- Se añadieron los métodos `getCurrentDate()` y `getCurrentTime()` en `DateTimeInfo`.
+- Se modificó `SystemInfo` para mostrar la fecha y la hora en líneas independientes.
+- Se verificó el funcionamiento mediante compilación y ejecución del proyecto.
+
+### Problemas encontrados
+- Error de compilación porque los métodos `getCurrentDate()` y `getCurrentTime()` no existían.
+- Confusión inicial entre `Date`, `LocalDate`, `LocalTime` y `LocalDateTime`.
+
+### Aprendizajes
+- Diferencia entre `LocalDate`, `LocalTime` y `LocalDateTime`.
+- Uso de `DateTimeFormatter` con distintos patrones.
+- Importancia de investigar un error antes de modificar el código.
+- Aplicación del principio de responsabilidad única: `DateTimeInfo` obtiene y formatea la información; `SystemInfo` decide cómo mostrarla.
+### Reflexión personal
+
+En esta misión trabajé el proceso de traducir una idea a Java sin copiar el código directamente. Descubrí que, siguiendo un proceso de análisis y utilizando pequeñas pistas, puedo construir la solución por mí mismo. También comprendí que los desarrolladores no memorizan todo el código, sino que reutilizan patrones y resuelven los problemas paso a paso.
+
+
 
 
 
