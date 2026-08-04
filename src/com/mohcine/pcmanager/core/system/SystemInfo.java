@@ -37,8 +37,10 @@ public class SystemInfo {
                 summary.addLine(" MOHCINE PC MANAGER");
                 summary.addLine(" SYSTEM INFORMATION");
                 summary.addLine("==============================");
-                summary.addLine("Fecha y hora: "
-                                + dateTimeInfo.getCurrentDateTime());
+                summary.addLine("Fecha : "
+                                + dateTimeInfo.getCurrentDate());
+                summary.addLine("Hora : "
+                                + dateTimeInfo.getCurrentTime());
 
                 summary.addLine("");
 

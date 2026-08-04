@@ -2,7 +2,8 @@
  MOHCINE PC MANAGER
  SYSTEM INFORMATION
 ==============================
-Fecha y hora: 02/08/2026 19:41:08
+Fecha : 04/08/2026
+Hora : 19:27:00
 
 Equipo: DESKTOP-NH7CN2S
 Usuario: admin
@@ -20,9 +21,9 @@ Memoria Libre : 98,43 %
 ----- DISCO -----
 Unidad        : C:\
 Espacio Total : 475 GB
-Espacio Libre : 278 GB
-Uso Disco     : 41,50 %
-Disco Libre   : 58,50 %
+Espacio Libre : 280 GB
+Uso Disco     : 41,05 %
+Disco Libre   : 58,95 %
 
 ----- CPU -----
 Arquitectura : amd64
@@ -35,4 +36,4 @@ Valor analizado: 1,75 %
 
 Disco: EXCELLENT
 Mensaje: Existe suficiente espacio libre en el disco.
-Valor analizado: 58,50 %
+Valor analizado: 58,95 %
